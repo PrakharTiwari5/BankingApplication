@@ -1,0 +1,33 @@
+database:soprabanking
+
+create database soprabanking; 
+
+use soprabanking;
+
+create table account
+(
+accno varchar(20),
+cname varchar(20),
+gender varchar(20),
+dob varchar(20),
+address varchar(20),
+mob int,
+role varchar(20),
+password varchar(20),
+sques varchar(20),
+sans varchar(20)
+);
+
+insert into account values('A001','Admin','male','27-01-2019','Noida',9999,'Admin','admin','First Bank','HDFC');
+//Account number will be treated as loginid
+
+create table transactionbank
+(
+accountno varchar(20),
+ref varchar(20),
+dotrans varchar(20),
+transid varchar(20),
+depamount int,
+wdrwamount int,
+netbal int
+);
